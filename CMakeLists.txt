@@ -61,7 +61,7 @@ set(CH_VERSION 0x00070002)
 # Location of additional CMake scripts
 #-----------------------------------------------------------------------------
 
-list(APPEND CMAKE_MODULE_PATH "${CMAKE_SOURCE_DIR}/cmake/")
+list(APPEND CMAKE_MODULE_PATH ${PROJECT_SOURCE_DIR}/cmake)
 include(GetGitRevisionDescription)
 get_git_head_revision(GIT_REFSPEC VCS_REVISION)
 
